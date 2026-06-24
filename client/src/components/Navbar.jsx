@@ -7,7 +7,7 @@ function Navbar() {
 
         {/* Logo */}
         <Link
-          to="/"
+          to="/#hero"
           className="text-2xl font-bold text-gray-900"
         >
           IntellX AI
@@ -16,26 +16,17 @@ function Navbar() {
         {/* Navigation */}
         <div className="flex items-center gap-8">
 
-          <a
-            href="#services"
-            className="text-gray-700 hover:text-black transition"
-          >
+          <Link to="/#services" className="text-gray-700 hover:text-black transition">
             Services
-          </a>
+          </Link>
 
-          <a
-            href="#about"
-            className="text-gray-700 hover:text-black transition"
-          >
+          <Link to="/#about" className="text-gray-700 hover:text-black transition">
             About
-          </a>
+          </Link>
 
-          <a
-            href="#contact"
-            className="text-gray-700 hover:text-black transition"
-          >
+          <Link to="/#contact" className="text-gray-700 hover:text-black transition">
             Contact
-          </a>
+          </Link>
 
           <button className="px-4 py-2 rounded-lg border">
             Theme

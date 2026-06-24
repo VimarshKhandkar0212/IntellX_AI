@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function About() {
   return (
     <section
@@ -56,6 +58,33 @@ function About() {
 
         </div>
 
+        <div className="mt-20 text-center">
+
+          <h3 className="text-3xl font-semibold mb-4">
+            Get to know more through our testimonials & feedback
+          </h3>
+
+          <p className="text-gray-600 mb-8">
+            Learn how businesses are leveraging IntellX AI solutions to improve efficiency and drive growth.
+          </p>
+
+          <Link
+            to="/testimonials"
+            className="
+              inline-block
+              border
+              px-6
+              py-3
+              rounded-xl
+              hover:bg-black
+              hover:text-white
+              transition
+            "
+          >
+            View Testimonials
+          </Link>
+
+        </div>
       </div>
     </section>
   );
