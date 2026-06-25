@@ -48,9 +48,31 @@ function ServiceDetail() {
             ← Back to Services
           </Link>
 
-          <p className="text-gray-500">
-            Home &gt; Services &gt; {service.title}
-          </p>
+          <p className="text-gray-500 flex flex-wrap gap-1">
+
+  <Link
+    to="/"
+    className="hover:text-black transition"
+  >
+    Home
+  </Link>
+
+  <span>&gt;</span>
+
+  <Link
+    to="/#services"
+    className="hover:text-black transition"
+  >
+    Services
+  </Link>
+
+  <span>&gt;</span>
+
+  <span className="text-black">
+    {service.title}
+  </span>
+
+</p>
 
         </div>
 

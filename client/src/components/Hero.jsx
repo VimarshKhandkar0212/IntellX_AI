@@ -24,17 +24,10 @@ function Hero() {
         <div className="mt-10 flex justify-center gap-4">
 
           <a
-            href="#contact"
+            href="#services"
             className="px-6 py-3 bg-black text-white rounded-xl"
           >
             Get Started
-          </a>
-
-          <a
-            href="#services"
-            className="px-6 py-3 border rounded-xl"
-          >
-            Learn More
           </a>
 
         </div>
