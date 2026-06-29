@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white mt-20">
+    <footer className="bg-gray-100 dark:bg-gray-900 text-black dark:text-white transition-colors duration-300">
 
       <div className="max-w-7xl mx-auto px-6 py-16">
 
@@ -16,7 +16,7 @@ function Footer() {
 
             <div className="w-16 h-1 bg-blue-500 mb-4"></div>
 
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 leading-relaxed transition-colors">
               Empowering businesses through intelligent
               automation, AI-driven solutions, and scalable
               digital transformation.
@@ -34,28 +34,28 @@ function Footer() {
 
             <div className="w-16 h-1 bg-blue-500 mb-4"></div>
 
-            <ul className="space-y-3 text-gray-400">
+            <ul className="space-y-3 text-gray-600 dark:text-gray-400 transition-colors">
 
               <li>
-                <a href="#hero" className="hover:text-white transition">
+                <a href="#hero" className="hover:text-black dark:hover:text-white transition-colors">
                   Home
                 </a>
               </li>
 
               <li>
-                <a href="#services" className="hover:text-white transition">
+                <a href="#services" className="hover:text-black dark:hover:text-white transition-colors">
                   Services
                 </a>
               </li>
 
               <li>
-                <a href="#about" className="hover:text-white transition">
+                <a href="#about" className="hover:text-black dark:hover:text-white transition-colors">
                   About
                 </a>
               </li>
 
               <li>
-                <a href="#contact" className="hover:text-white transition">
+                <a href="#contact" className="hover:text-black dark:hover:text-white transition-colors">
                   Contact
                 </a>
               </li>
@@ -63,7 +63,7 @@ function Footer() {
               <li>
                 <a
                   href="/testimonials"
-                  className="hover:text-white transition"
+                  className="hover:text-black dark:hover:text-white transition-colors"
                 >
                   Testimonials
                 </a>
@@ -83,7 +83,7 @@ function Footer() {
 
             <div className="w-16 h-1 bg-blue-500 mb-4"></div>
 
-            <ul className="space-y-3 text-gray-400">
+            <ul className="space-y-3 text-gray-600 dark:text-gray-400 transition-colors">
 
               <li>
                 Email: your-email@example.com
@@ -139,9 +139,9 @@ function Footer() {
 
       {/* Bottom Bar */}
 
-      <div className="border-t border-gray-800">
+      <div className="border-t border-gray-400 dark:border-gray-800 transition-colors">
 
-        <div className="max-w-7xl mx-auto px-6 py-5 text-center text-gray-500 text-sm">
+        <div className="max-w-7xl mx-auto px-6 py-5 text-center text-gray-500 dark:text-gray-400 text-sm transition-colors">
 
           © {new Date().getFullYear()} IntellX AI.
           All Rights Reserved.

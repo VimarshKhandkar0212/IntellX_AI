@@ -4,7 +4,7 @@ import Services from "../components/Services";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-
+import TestimonialsSlider from "../components/TestimonialsSlider";
 
 function Home() {
   return (
@@ -18,6 +18,8 @@ function Home() {
       <About />
 
       <Contact />
+
+      <TestimonialsSlider/>
 
       <Footer />
     </>
