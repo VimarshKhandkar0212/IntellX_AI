@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { Mail, Phone, MapPin, Star, Send, ShieldCheck } from "lucide-react";
-
+import { Zap } from "lucide-react";
 function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -61,7 +61,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-[90vh] flex items-center py-24 px-6 bg-white dark:bg-gray-950 transition-colors duration-300"
+      className="min-h-[90vh] flex items-center py-24 px-6 bg-gray-100 dark:bg-gray-950 transition-colors duration-300"
     >
       <div className="w-full max-w-7xl mx-auto">
         {/* Heading */}
@@ -74,6 +74,8 @@ function Contact() {
           <h2 className="text-5xl font-bold mt-6 text-black dark:text-white transition-colors">
             Let's Build Something Extraordinary
           </h2>
+
+          <div className="mx-auto mt-6 h-1 w-24 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400"></div>
 
           <p className="text-gray-600 dark:text-gray-300 mt-4 transition-colors">
             Tell us about your project and we'll get back to you.
@@ -90,7 +92,7 @@ function Contact() {
               </h2>
 
               <div className="space-y-5">
-                <div className="flex gap-4 items-center rounded-2xl border border-gray-200 dark:border-slate-700 p-5">
+                <div className="flex gap-4 items-center rounded-2xl border border-gray-200 dark:border-slate-700 p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-blue-400 dark:hover:border-cyan-400 cursor-pointer">
                   <div className="h-14 w-14 rounded-2xl bg-blue-50 dark:bg-cyan-500/10 flex items-center justify-center">
                     <Mail className="text-blue-600 dark:text-cyan-400" />
                   </div>
@@ -101,12 +103,12 @@ function Contact() {
                     </h4>
 
                     <p className="text-gray-600 dark:text-gray-300">
-                      contact@intellxai.com
+                      ninad.abhyankar88@gmail.com
                     </p>
                   </div>
                 </div>
 
-                <div className="flex gap-4 items-center rounded-2xl border border-gray-200 dark:border-slate-700 p-5">
+                <div className="flex gap-4 items-center rounded-2xl border border-gray-200 dark:border-slate-700 p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-blue-400 dark:hover:border-cyan-400 cursor-pointer">
                   <div className="h-14 w-14 rounded-2xl bg-blue-50 dark:bg-cyan-500/10 flex items-center justify-center">
                     <Phone className="text-blue-600 dark:text-cyan-400" />
                   </div>
@@ -117,12 +119,12 @@ function Contact() {
                     </h4>
 
                     <p className="text-gray-600 dark:text-gray-300">
-                      9898998989
+                      +91 7337358747
                     </p>
                   </div>
                 </div>
 
-                <div className="flex gap-4 items-center rounded-2xl border border-gray-200 dark:border-slate-700 p-5">
+                <div className="flex gap-4 items-center rounded-2xl border border-gray-200 dark:border-slate-700 p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-blue-400 dark:hover:border-cyan-400 cursor-pointer">
                   <div className="h-14 w-14 rounded-2xl bg-blue-50 dark:bg-cyan-500/10 flex items-center justify-center">
                     <MapPin className="text-blue-600 dark:text-cyan-400" />
                   </div>
@@ -136,7 +138,7 @@ function Contact() {
                   </div>
                 </div>
 
-                <div className="rounded-2xl border border-blue-500/40 bg-blue-50 dark:bg-cyan-500/10 p-6">
+                <div className="rounded-2xl border border-blue-500/40 bg-blue-50 dark:bg-cyan-500/10 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-blue-400 dark:hover:border-cyan-400 cursor-pointer">
                   <h3 className="font-bold text-lg text-black dark:text-white mb-4">
                     <Star className="text-blue-600 dark:text-cyan-400" />
                     Why Contact Us?
@@ -178,7 +180,7 @@ function Contact() {
                       required
                       minLength="2"
                       placeholder="John Doe"
-                      className="w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-950 text-black dark:text-white rounded-lg px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-950 text-black dark:text-white rounded-lg px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 dark:focus:ring-cyan-400/40 dark:focus:border-cyan-400 transition-all duration-300 "
                     />
                   </div>
 
@@ -194,7 +196,7 @@ function Contact() {
                       onChange={handleChange}
                       required
                       placeholder="john@example.com"
-                      className="w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-950 text-black dark:text-white rounded-lg px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-950 text-black dark:text-white rounded-lg px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 dark:focus:ring-cyan-400/40 dark:focus:border-cyan-400 transition-all duration-300"
                     />
                   </div>
                 </div>
@@ -216,7 +218,7 @@ function Contact() {
                       pattern="[0-9]{10}"
                       title="Please enter a valid 10 digit phone number"
                       placeholder="9876543210"
-                      className="w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-950 text-black dark:text-white rounded-lg px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-950 text-black dark:text-white rounded-lg px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 dark:focus:ring-cyan-400/40 dark:focus:border-cyan-400 transition-all duration-300"
                     />
                   </div>
 
@@ -231,7 +233,7 @@ function Contact() {
                       value={formData.companyName}
                       onChange={handleChange}
                       placeholder="Your Company"
-                      className="w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-950 text-black dark:text-white rounded-lg px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      className="w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-950 text-black dark:text-white rounded-lg px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 dark:focus:ring-cyan-400/40 dark:focus:border-cyan-400 transition-all duration-300"
                     />
                   </div>
                 </div>
@@ -249,7 +251,7 @@ function Contact() {
                     value={formData.projectTitle}
                     onChange={handleChange}
                     placeholder="AI Chatbot for Customer Support"
-                    className="w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-950 text-black dark:text-white rounded-lg px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-950 text-black dark:text-white rounded-lg px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 dark:focus:ring-cyan-400/40 dark:focus:border-cyan-400 transition-all duration-300"
                   />
                 </div>
 
@@ -267,7 +269,7 @@ function Contact() {
                     value={formData.projectDetail}
                     onChange={handleChange}
                     placeholder="Tell us about your project..."
-                    className="w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-950 text-black dark:text-white rounded-lg px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    className="w-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-950 text-black dark:text-white rounded-lg px-4 py-3 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500/40 focus:border-blue-500 dark:focus:ring-cyan-400/40 dark:focus:border-cyan-400 transition-all duration-300"
                   />
 
                   <p className="text-right text-sm text-gray-500 dark:text-gray-400 mt-2 transition-colors">
@@ -278,7 +280,7 @@ function Contact() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full rounded-xl py-4 font-semibold text-lg text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 transition-all duration-300 hover:scale-[1.01] shadow-lg"
+                  className="w-full rounded-xl py-4 font-semibold text-lg text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 transition-all duration-300 hover:scale-[1.01] shadow-lg active:scale-[0.99] hover:shadow-[0_10px_35px_rgba(59,130,246,0.45)]"
                 >
                   {loading ? "Submitting..." : "Get Free Consultation"}
                 </button>
@@ -302,6 +304,23 @@ function Contact() {
             </p>
           </div>
         )}
+        <div className="mt-10 lg:col-span-2 flex justify-center">
+          <div className="w-full max-w-3xl flex items-center gap-6 rounded-2xl border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-8 py-5 shadow-lg w-full max-w-3xl">
+            <div className="h-14 w-14 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 flex items-center justify-center">
+              <Zap className="text-white" />
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-black dark:text-white">
+                Quick Response Guaranteed
+              </h4>
+
+              <p className="text-gray-600 dark:text-gray-300">
+                We typically respond within 24 hours to all inquiries.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
