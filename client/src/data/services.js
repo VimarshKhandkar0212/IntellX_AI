@@ -4,10 +4,20 @@ import dataAnalyticsImage from "../assets/services/dataAnalytics.png";
 import customAiSolutionsImage from "../assets/services/customAiSolutions.png";
 import voiceAgentsImage from "../assets/services/voiceAgents.png";
 
+import {
+  MessageSquare,
+  Workflow,
+  BarChart3,
+  BrainCircuit,
+  Mic,
+} from "lucide-react";
+
 export const services = [
   {
   title: "AI Chatbots",
     slug: "ai-chatbots",
+
+    icon: MessageSquare,
 
     heroImage: chatbotsImage,
 
@@ -47,6 +57,8 @@ export const services = [
     title: "Workflow Automation",
     slug: "workflow-automation",
 
+    icon: Workflow,
+
     heroImage: workflowAutomationImage,
 
     description:
@@ -84,6 +96,8 @@ export const services = [
   {
     title: "Data Analytics",
     slug: "data-analytics",
+
+    icon: BarChart3,
 
     heroImage: dataAnalyticsImage,
 
@@ -123,7 +137,9 @@ export const services = [
     title: "Custom AI Solutions",
     slug: "custom-ai-solutions",
 
-    heroImage: dataAnalyticsImage,
+    icon: BrainCircuit,
+
+    heroImage: customAiSolutionsImage,
 
     description:
       "Tailored AI systems designed around your business needs.",
@@ -160,6 +176,9 @@ export const services = [
   {
     title: "Voice Agents",
     slug: "voice-agents",
+
+    icon: Mic,
+
     heroImage: voiceAgentsImage,
     
     description:
